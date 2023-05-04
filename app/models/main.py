@@ -1,8 +1,8 @@
 from utils import load_ml_model
 import pandas as pd
-
+from app.models import  RequestEvaluation
 model = load_ml_model.load_ml_model("./model.pkl")
-
+from utils import amortization as Amortization
 print(model)
 
 async def evaluate(req: RequestEvaluation):
@@ -26,6 +26,6 @@ async def evaluate(req: RequestEvaluation):
 
     return{
         "pd": f"{default_prob*100:.2f}%",
-        "interest_rate": f"{opt_rate:.4f}%"
+        "interest_rate": f"{opt_Rate:.4f}%"
     }
 

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.models import RequestEvaluation
 import pandas as pd
-from utils import load_ml_model
+
 
 app = FastAPI()
 

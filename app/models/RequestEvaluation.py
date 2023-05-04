@@ -8,5 +8,5 @@ class RequestEvaluation(BaseModel):
     addr_state: str
     grade: str
     sub_grade: str
-    total_pymnt: float
+    total_pymnt:float
 
